@@ -1,3 +1,4 @@
-<p>
-  professors-view works!
-</p>
+
+<ion-list>
+  <app-professor *ngFor="let professor of (getProfessor() | async)" [professor]="professor" (onEdit)="onEditProfessor($event)" (onDelete)="onDeleteAlert($event)"></app-professor>
+</ion-list>

@@ -1,7 +1,7 @@
-export interface Proffesor {
+export interface Professor {
     id:number;
     ProName:string;
     ProSurname:string;
-    ProAge:number
+    ProAge:number;
     ProPicture?:string;
 }
