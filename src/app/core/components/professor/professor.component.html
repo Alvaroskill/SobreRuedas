@@ -1,7 +1,6 @@
 <ion-item *ngIf="professor">
     <ion-avatar class="professor">
-      <img *ngIf="!professor.ProPicture" alt=""
-        src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      <img *ngIf="!professor.ProPicture" alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
       <img *ngIf="professor.ProPicture" alt="Professor picture" [src]="professor.ProPicture" />
     </ion-avatar>
     <ion-label>
@@ -14,13 +13,13 @@
       <ion-icon class="star" slot="icon-only" name="star"></ion-icon>
       <ion-icon class="star" slot="icon-only" name="star"></ion-icon>
     </span>
-    <ion-button class="item-expanded" *ngIf="!isLowResolution()" slot="end" fill="clear" (click)="onEditClick()">
+    <ion-button class="item-expanded"  slot="end" fill="clear" (click)="onEditClick()">
       <div class="vertical">
         <ion-icon name="create"></ion-icon>
         {{'Editar' | uppercase}}
       </div>
     </ion-button>
-    <ion-button class="item-expanded" *ngIf="!isLowResolution()" slot="end" fill="clear" color="danger" (click)="onDeleteClick()">
+    <ion-button class="item-expanded" slot="end" fill="clear" color="danger" (click)="onDeleteClick()">
       <div class="vertical">
         <ion-icon name="trash"></ion-icon>
         {{'Borrar' | uppercase}}

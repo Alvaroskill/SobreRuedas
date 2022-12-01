@@ -1,0 +1,22 @@
+<ion-item *ngIf="student">
+    <ion-avatar class="student">
+      <img *ngIf="!student.StuPicture" alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      <img *ngIf="student.StuPicture" alt="student picture" [src]="student.StuPicture" />
+    </ion-avatar>
+    <ion-label>
+      <h3>{{student.StuName}} {{student.StuSurname}}</h3>
+      <p>{{student.StuAge}} años</p>
+    </ion-label>
+    <ion-button class="item-expanded" slot="end" fill="clear" (click)="onEditClick()">
+      <div class="vertical">
+        <ion-icon name="create"></ion-icon>
+        {{'Editar' | uppercase}}
+      </div>
+    </ion-button>
+    <ion-button class="item-expanded" slot="end" fill="clear" color="danger" (click)="onDeleteClick()">
+      <div class="vertical">
+        <ion-icon name="trash"></ion-icon>
+        {{'Borrar' | uppercase}}
+      </div>
+    </ion-button>
+  </ion-item>

@@ -1,4 +1,6 @@
-
+<ion-item>
+  <ion-button (click)="onNewProfessor()" style="margin:10px;width:50px;height:50px;--border-radius:50%" slot="start" icon-only><ion-icon style="zoom:2" name="add-outline"></ion-icon></ion-button>
+</ion-item>
 <ion-list>
   <app-professor *ngFor="let professor of (getProfessor() | async)" [professor]="professor" (onEdit)="onEditProfessor($event)" (onDelete)="onDeleteAlert($event)"></app-professor>
 </ion-list>

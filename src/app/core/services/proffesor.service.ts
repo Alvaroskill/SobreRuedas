@@ -14,21 +14,21 @@ export class ProfessorService {
       ProName: 'Jorge',
       ProSurname: 'García',
       ProAge: 23,
-      ProPicture: '',
+      ProPicture: 'assets/images/professors/Jorge.jfif',
     },
     {
       id: 2,
       ProName: 'Lucía',
       ProSurname: 'Cueto',
       ProAge: 30,
-      ProPicture: '',
+      ProPicture: '../assets/images/professors/Lucia.jfif',
     },
     {
       id: 3,
       ProName: 'Paco',
       ProSurname: 'Gutiérrez',
       ProAge: 40,
-      ProPicture: '',
+      ProPicture: '../assets/images/professors/Paco.jfif',
     },
   ];
 

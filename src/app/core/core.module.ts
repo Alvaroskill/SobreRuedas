@@ -7,9 +7,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import es from '@angular/common/locales/es'
 import { ProfessorComponent } from './components/professor/professor.component';
-import { ProfessorsDetailsComponent } from './components/professors-details/professors-details.component';
+import { ProfessorsDetailsComponent } from './components';
 import { ProfessorService } from './services';
 import { RouterModule } from '@angular/router';
+import { StudentComponent } from './components/student/student.component';
+import { StudentsDetailsComponent } from './components/students-details/students-details.component';
 
 
 
@@ -17,7 +19,9 @@ registerLocaleData(es);
 @NgModule({
   declarations: [
     ProfessorComponent,
-    ProfessorsDetailsComponent
+    ProfessorsDetailsComponent,
+    StudentComponent,
+    StudentsDetailsComponent
 
   ],
   imports: [
@@ -41,6 +45,9 @@ registerLocaleData(es);
     ReactiveFormsModule,
     ProfessorComponent,
     ProfessorsDetailsComponent,
+    StudentComponent,
+    StudentsDetailsComponent
+
 
   ],
   

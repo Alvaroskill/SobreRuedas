@@ -50,6 +50,13 @@ export class ProfessorsViewComponent implements OnInit {
     });
   }
 
+
+
+  onNewProfessor(){
+    this.presentProfessorForm(null);  
+  }
+
+
   onEditProfessor(professor: Professor){
     this.presentProfessorForm(professor);
   }
