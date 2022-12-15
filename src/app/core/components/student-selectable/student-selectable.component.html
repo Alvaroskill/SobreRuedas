@@ -1,0 +1,25 @@
+<ion-accordion-group [multiple]="true" #accordion>
+  <ion-accordion value="first">
+    <ion-item slot="header" color="light">
+      <ng-container *ngIf="selectedStudent!=null">
+        <ion-avatar class="student">
+          <img *ngIf="!selectedStudent?.StuPicture"  src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          <img *ngIf="selectedStudent?.StuPicture"  [src]="selectedStudent?.StuPicture" />
+        </ion-avatar>
+        <ion-label>{{selectedStudent?.StuSurname}}, {{selectedStudent?.StuName}}</ion-label>
+      </ng-container>
+      <ion-label *ngIf="!selectedStudent">Selecciona un estudiante</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      <ion-list>
+        <ion-item *ngFor="let student of getStudent()" button detail  (click)="onStudentClicked(student, accordion)">
+          <ion-avatar class="professor">
+            <img *ngIf="!student.StuPicture"  src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            <img *ngIf="student.StuPicture"  [src]="student.StuPicture" />
+          </ion-avatar>
+          <ion-label>{{student.StuSurname}}, {{student.StuName}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-accordion>
+</ion-accordion-group>

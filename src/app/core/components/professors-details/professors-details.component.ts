@@ -14,7 +14,7 @@ export class ProfessorsDetailsComponent implements OnInit {
   mode:"New" | "Edit" = "New";
   @Input('professor') set professor(professor:Professor){
     if(professor){
-      this.form.controls.id.setValue(professor.id);
+      this.form.controls.ProId.setValue(professor.ProId);
       this.form.controls.ProName.setValue(professor.ProName);
       this.form.controls.ProSurname.setValue(professor.ProSurname);
       this.form.controls.ProAge.setValue(professor.ProAge);
@@ -29,7 +29,7 @@ export class ProfessorsDetailsComponent implements OnInit {
     private modal:ModalController
   ) { 
     this.form = this.fb.group({
-      id:[null],
+      ProId:[null],
       ProName:['', [Validators.required]],
       ProSurname:['', [Validators.required]],
       ProAge:['', [Validators.required]],

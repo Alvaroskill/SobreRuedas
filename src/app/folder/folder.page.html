@@ -14,6 +14,9 @@
     </ion-toolbar>
   </ion-header>
 
-  
-  <app-professors-view *ngIf="folder=='Professors-view'"></app-professors-view>
+  <app-home *ngIf="folder=='Home'"></app-home>
+  <app-professors-view *ngIf="folder=='Professors'"></app-professors-view>
+  <app-students-view *ngIf="folder=='Students'"></app-students-view>
+  <app-lessons-view *ngIf="folder=='Lessons'"></app-lessons-view>
+  <app-aboutme *ngIf="folder=='AboutMe'"></app-aboutme>
   </ion-content>

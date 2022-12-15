@@ -8,28 +8,28 @@ import { Student } from "../models/student.model";
     providedIn: 'root'
   })
   
-  export class studentService {
+  export class StudentService {
     private _student: Student[] = [
       {
-        id: 1,
+        StuId: 1,
         StuName: 'Jose',
         StuSurname: 'Benítez',
         StuAge: 50,
-        StuPicture: 'assets/images/students/Jorge.jfif',
+        StuPicture: '../assets/images/students/Jose.jfif',
       },
       {
-        id: 2,
+        StuId: 2,
         StuName: 'Diego',
         StuSurname: 'Aguilera',
         StuAge: 35,
-        StuPicture: '../assets/images/students/Lucia.jfif',
+        StuPicture: '../assets/images/students/Diego.jfif',
       },
       {
-        id: 3,
+        StuId: 3,
         StuName: 'Alejandro',
         StuSurname: 'Gutiérrez',
         StuAge: 18,
-        StuPicture: '../assets/images/students/Paco.jfif',
+        StuPicture: '../assets/images/students/Alejandro.jfif',
       },
     ];
   
@@ -39,27 +39,27 @@ import { Student } from "../models/student.model";
     id: number = this._student.length + 1;
     constructor() {}
   
-    getstudent() {
+    getStudent() {
       return this._student;
     }
   
-    getstudentById(id: number) {
-      return this._student.find((p) => p.id == id);
+    getStudentById(id: number) {
+      return this._student.find((p) => p.StuId == id);
     }
   
-    deletestudentById(id: number) {
-      this._student = this._student.filter((p) => p.id != id);
+    deleteStudentById(id: number) {
+      this._student = this._student.filter((p) => p.StuId != id);
       this._studentSubject.next(this._student);
     }
   
-    addstudent(student: Student) {
-      student.id = this.id++;
+    addStudent(student: Student) {
+      student.StuId = this.id++;
       this._student.push(student);
       this._studentSubject.next(this._student);
     }
   
-    updatestudent(student:Student) {
-      var _student = this._student.find((p) => p.id == student.id);
+    updateStudent(student:Student) {
+      var _student = this._student.find((p) => p.StuId == student.StuId);
       if (_student) {
         _student.StuName = student.StuName;
         _student.StuSurname = student.StuSurname;

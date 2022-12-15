@@ -13,6 +13,13 @@ import { RouterModule } from '@angular/router';
 import { StudentComponent } from './components/student/student.component';
 import { StudentsDetailsComponent } from './components/students-details/students-details.component';
 
+import { LessonsDetailsComponent } from './components/lessons-details/lessons-details.component';
+import { LessonComponent } from './components/lesson/lesson.component';
+import { ProfessorSelectableComponent } from './components/professor-selectable/professor-selectable.component';
+import { StudentSelectableComponent } from './components/student-selectable/student-selectable.component';
+import { DateTimeSelectableComponent } from './components/date-time-selectable/date-time-selectable.component';
+
+
 
 
 registerLocaleData(es);
@@ -21,7 +28,13 @@ registerLocaleData(es);
     ProfessorComponent,
     ProfessorsDetailsComponent,
     StudentComponent,
-    StudentsDetailsComponent
+    StudentsDetailsComponent,
+    LessonComponent,
+    LessonsDetailsComponent,
+    ProfessorSelectableComponent,
+    StudentSelectableComponent,
+    DateTimeSelectableComponent
+    
 
   ],
   imports: [
@@ -46,7 +59,12 @@ registerLocaleData(es);
     ProfessorComponent,
     ProfessorsDetailsComponent,
     StudentComponent,
-    StudentsDetailsComponent
+    StudentsDetailsComponent,
+    LessonComponent,
+    LessonsDetailsComponent,
+    ProfessorSelectableComponent,
+    StudentComponent,
+    DateTimeSelectableComponent
 
 
   ],

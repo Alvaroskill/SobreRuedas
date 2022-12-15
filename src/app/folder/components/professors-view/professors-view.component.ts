@@ -64,7 +64,7 @@ export class ProfessorsViewComponent implements OnInit {
   async onDeleteAlert(professor : Professor){
     const alert = await this.alert.create({
       header:'Atención',
-      message: '¿Está seguro de que desear borrar a la persona?',
+      message: '¿Está seguro de que desear borrar al profesor?',
       buttons: [
         {
           text: 'Cancelar',
@@ -77,7 +77,7 @@ export class ProfessorsViewComponent implements OnInit {
           text: 'Borrar',
           role: 'confirm',
           handler: () => {
-            this.professorSvc.deleteProfessorById(professor.id);
+            this.professorSvc.deleteProfessorById(professor.ProId);
           },
         },
       ],
@@ -87,32 +87,5 @@ export class ProfessorsViewComponent implements OnInit {
 
     const { role } = await alert.onDidDismiss();
   }
-
-  /*async onPersonExistsAlert(task){
-    const alert = await this.alert.create({
-      header: 'Error',
-      message: 'No es posible borrar la persona porque está asignada a una tarea',
-      buttons: [
-        {
-          text: 'Cerrar',
-          role: 'close',
-          handler: () => {
-          },
-        },
-      ],
-    });
-
-    await alert.present();
-
-    const { role } = await alert.onDidDismiss();
-  }*/
-
-  /*onDeletePerson(professor){
-    if(!this.assignmentsSvc.getAssignmentsByPersonId(person.id).length)
-    this.onDeleteAlert(person);
-    else
-      this.onPersonExistsAlert(person);
-    
-  }*/
 
 }

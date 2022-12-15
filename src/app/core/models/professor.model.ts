@@ -1,5 +1,5 @@
 export interface Professor {
-    id:number;
+    ProId:number;
     ProName:string;
     ProSurname:string;
     ProAge:number;

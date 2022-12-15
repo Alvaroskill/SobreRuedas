@@ -1,0 +1,57 @@
+{
+    "Home":{
+        "title":"Home"
+        
+    },
+    
+    "Professors":{
+        "title":"Professor data"
+        
+    },
+
+    "Students":{
+        "title":"Student data"
+        
+    },
+
+    "Lessons":{
+        "title":"Class data",
+        "professor" : "Teacher to be assigned",
+        "student" : "Student to be assigned",
+        "datetime" : "Date and Time"
+        
+    },
+
+
+    "properties" : {
+
+        "edit" : "Edit",
+        "delete" : "Delete",
+        "name" : "Name",
+        "surname" : "Surname",
+        "age" : "Age",
+        "years" : "years",
+        "close" : "Close",
+        "image" : "Image"
+
+
+    },
+
+    
+    "Datetime" : {
+
+        "text" : "Select date and time",
+        "done" : "Done",
+        "cancel" : "Cancel"
+
+    },
+
+
+    "AboutMe":{
+
+        "text" : "Hello, I'm Álvaro Linero Fernández, since I was a child I've always liked computers, consoles, and anything related to technology. These last two years I've been trying to learn a lot about it, and although it's complicated, I like it a lot. Apart from the technological world I always look for some peace of mind doing something else like sports or celebrations."
+    
+    }
+
+
+}

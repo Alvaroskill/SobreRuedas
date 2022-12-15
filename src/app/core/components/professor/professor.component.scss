@@ -6,35 +6,3 @@
 .star{
     color: goldenrod;
 }
-
-.item-detail-container {
-    z-index: -1;
-    border-radius: 10px;
-    position: relative;
-    margin: 1rem;
-    font-family: Righteous;
-    width: 90%;
-    height: 120px;
-    max-width: 90%;
-    max-height: 120px;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-left: 5%;
-    margin-top: -12%;
-    text-align: start;
-    box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.item-container h3 {        
-    font-weight: 400;
-    font-size: 20px;
-    padding-top: 1rem;
-    color: black;
-}
-.item-container p {
-    font-weight: lighter;
-    color: black;
-    line-height: 2em;
-    font-size: 14px;
-}

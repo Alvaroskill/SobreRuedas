@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{'Lessons.title' | translate}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="onDismiss(null)">{{'properties.close' | translate}}</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" (keyup.enter)="onSubmit()">
+    <ion-item-divider>
+      <ion-label>
+        {{'Lessons.professor' | translate}}
+      </ion-label>
+    </ion-item-divider>
+    <app-professor-selectable formControlName="ProId"></app-professor-selectable>
+    <ion-item-divider>
+      <ion-label>
+        {{'Lessons.student' | translate}}
+      </ion-label>
+    </ion-item-divider>
+    <app-student-selectable formControlName="StuId"></app-student-selectable>
+    <ion-item-divider>
+      <ion-label>
+        {{'Lessons.datetime' | translate}}
+      </ion-label>
+    </ion-item-divider>
+    <app-date-time-selectable formControlName="dateTime"></app-date-time-selectable>
+  </form>
+</ion-content>
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button [disabled]="!form.valid" (click)="onSubmit()">{{button_text}}</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

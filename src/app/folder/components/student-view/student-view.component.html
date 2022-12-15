@@ -1,0 +1,6 @@
+<ion-item>
+  <ion-button (click)="onNewStudent()" style="margin:10px;width:50px;height:50px;--border-radius:50%" slot="start" icon-only><ion-icon style="zoom:2" name="add-outline"></ion-icon></ion-button>
+</ion-item>
+<ion-list>
+  <app-student *ngFor="let student of (getStudent() | async)" [student]="student" (onEdit)="onEditStudent($event)" (onDelete)="onDeleteAlert($event)"></app-student>
+</ion-list>

@@ -1,0 +1,55 @@
+{
+
+    "Home":{
+        "title":"Inicio"
+        
+    },
+
+    "Professors": {
+        "title": "Datos del profesor"
+        
+    },
+
+    "Students":{
+        "title":"Datos del estudiante"
+        
+    },
+
+    "Lessons":{
+        "title":"Datos de la clase",
+        "name" :"Nombre",
+        "professor" : "Profesor por asignar",
+        "student" : "Estudiante por asignar" ,
+        "datetime" : "Fecha y Hora"
+    },
+
+    "properties" : {
+
+        "edit" : "Editar",
+        "delete" : "Borrar",
+        "name" : "Nombre",
+        "surname" : "  Apellido",
+        "age" : "Edad",
+        "years" : "años",
+        "close" : "Cerrar",
+        "image" : "Imagen"
+
+
+    },
+
+    "Datetime" : {
+
+        "text" : "Seleccione una fecha y hora",
+        "done" : "Hecho",
+        "cancel" : "Cancelar"
+
+    },
+
+
+    "AboutMe":{
+
+        "text" : "Hola, soy Álvaro Linero Fernández, desde pequeño siempre me han gustado los ordenadores, las consolas, y cualquier cosa relacionada con la tecnología. Estos dos últimos años he intando aprender bastante sobre ella, y aunque es complicado, me gusta bastante. Aparte del mundo tecnologico siempre suelo buscar un poco de paz mental haciendo otra cosa como deportes o celebraciones."
+    
+    }
+
+}
