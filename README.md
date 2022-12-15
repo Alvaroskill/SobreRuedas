@@ -19,5 +19,7 @@ Imagenes previas de la aplicación
 
 
 
+Vídeo explicativo:
 
 
+https://www.youtube.com/watch?v=jg8u1G6TAW8
